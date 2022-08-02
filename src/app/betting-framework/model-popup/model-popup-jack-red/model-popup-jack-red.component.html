@@ -1,0 +1,104 @@
+
+<div class="modal-dialog">
+    <div class="modal-content">
+     
+       <!-- Modal Header -->
+       <div class="modal-header" style="background-color: #343a40; margin-right: -0.5px;">
+         <h4 class="modal-title" style="color: white;
+         text-shadow: 2px 2px 4px #000000">Join <span style="color: red;">Red</span> Jack</h4>
+         <button style="color: white;" type="button" class="close" data-dismiss="modal">×</button>
+       </div>
+       
+        <!-- Modal body -->
+        <div >
+           <div class="row">
+               <div class="column left">
+                   <div class="side" >
+                   <h6 class="side-text">Contract Money</h6>
+                   </div>
+               </div>
+               <div class="column right">
+                   <div class="form-group">
+                       <!--<div>
+                           <div class="radio-container amount-type-green"
+                           *ngFor="let amo of amounts">
+
+                           <input type="radio" 
+                                    value={{amo}}
+                                    name="amount"
+                                    (change)="radioAmountChangedHandeler($event)">
+                                    <label for={{amo}}>{{amo}}</label> 
+                           </div></div>-->
+                           <div class="select">
+                            <select id="amount" name="amount" [(ngModel)]= "selectedAmount" class="form-control">
+                                <option *ngFor="let amo of amounts" [value]="amo.id" (ngModelChange)="radioAmountChangedHandeler($event)"
+                                            >{{amo.value}}
+                                </option>
+                            </select>
+                           </div>
+                        <!--<p>{{selectedAmount}}</p>-->
+                   </div>
+               </div>
+             </div>
+       </div>
+ 
+       <div>
+           <div class="row">
+               <div class="column left">
+                   <div class="side">
+                   <h6 class="side-text">Increse<br>Amount</h6>
+                   </div>
+               </div>
+               <div class="column right" style="padding: 20px 0px;">
+                   <div class="form-group">
+                       <div class="form-group">
+                          <!--  <div class="radio-container inamount-type-green"
+                           *ngFor="let inc of increments">
+                         <input type="radio" 
+                                    value={{inc}}
+                                    name="inamount"
+                                    (change)="radioIncrementChangedHandeler($event)">
+                                    <label for={{inc}}>{{inc}}</label>
+
+                           </div>-->
+                           <div class="select">
+                               <select id="increment" name="increment" [(ngModel)]= "selectedIncrement" class="form-control">
+                                    <option *ngFor="let inc of increments" [value]="inc.id" (ngModelChange)="radioIncrementChangedHandeler($event)"
+                                            >{{inc.value}}
+                                    </option>
+                            </select>
+                           </div>
+                           <!--<p>{{selectedIncrement}}</p>-->
+                       </div>
+                   </div>
+               </div>
+             </div>
+       </div>
+       
+       <!-- Modal footer -->
+       <div style="display: flex;
+                   justify-content: space-between;
+                   margin-right: -0.5px;">
+         <button style="width: 35%; 
+                       height: 40px;
+                       border-radius: 0px;
+                       border: none;
+                       border-radius: 0px 0px 0px 3px;
+                       background-color: gray;
+                       color: white;" 
+           type="button" data-dismiss="modal"
+           (click)=(reset())>Close</button>
+         <button style="width: 65%; 
+                       height: 40px;
+                       border-radius: 0px;
+                       border: none; 
+                       border-radius: 0px 0px 3px 0px;
+                       background-color: red; 
+                       color: white;" 
+           type="button" data-dismiss="modal"
+    (click)=(submit(selectedAmount,selectedIncrement))>Confirm</button>
+ 
+       </div>
+       
+    </div>
+</div>

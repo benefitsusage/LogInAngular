@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <header>
+        <div class="contanier-head">
+            <div class="content">
+                <h4>Available Balance</h4>
+                <h6>₹ 0.00</h6>
+            </div> 
+            <button class="logout" (click)="onLogout()">
+                    LogOut
+                  </button>
+        </div>
+    </header>
+
+    <div class="contanier-tab">
+
+       <ul class="nav nav-tabs tab-bar">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#king">King</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#queen">Queen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#heart">Heart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#jack">Jack</a>
+          </li>
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+
+        <div id="king" class="hole-container tab-pane active"><br>
+           <app-king-tab></app-king-tab>
+        </div>
+
+        <div id="queen" class="hole-container tab-pane fade"><br>
+           <app-queen-tab></app-queen-tab>
+        </div>
+
+        <div id="heart" class="hole-container tab-pane fade"><br>
+           <app-heart-tab></app-heart-tab>
+        </div>
+
+        <div id="jack" class="hole-container tab-pane fade"><br>
+            <app-jack-tab></app-jack-tab>
+        </div>
+
+      </div> 
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #343a40;
+    height: auto;
+}
+.contanier-head{
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contanier-head > .content{
+    margin: 15px;
+}
+
+.tab-bar{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.contanier-tab{
+    background-color: white;
+    height: auto;
+    padding-bottom: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav-item > a{
+    color: gray;
+}
+.nav-item > a:hover{
+    color: black;
+}
+.nav-item > .active{
+   font-weight: 700;
+   background-color: transparent;
+   outline: none;
+   color: black;
+   border: none;
+}
+.nav-link:hover{
+    outline: none;
+    border: none;
+}
+.content-tab{
+    display: flex;
+    justify-content: space-between;
+}
+.period{
+    padding: 10px; 
+    background-color: rgb(51, 61, 201);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: context-menu;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.count-down{
+    padding: 10px 20px; 
+    background-color: rgb(51, 61, 201);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: context-menu;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.content-tab-color{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.color{
+    padding: 0px;
+    width: 40%;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+}
+.hole-container{
+    margin: 10px;
+}
+.color > p{
+    margin-top: 10px;
+}
+.content-tab-color > .green{
+    background-color: green;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.content-tab-color > .green:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.content-tab-color > .red{
+    background-color: red;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.content-tab-color > .red:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.result{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: transparent;
+}
+.first-content{
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.second-content{
+    background-color: white;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content-right{
+    margin: 15px;
+}
+.content-left{
+    margin: 15px;
+    cursor: pointer;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: right; 
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.button {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    font-size: 16px;
+    margin: 4px 5px;
+    cursor: pointer;
+}
+
+.logout{
+color: white;
+background-color: #343a40;
+padding: 5px 10px;
+border: none;
+margin-right: 10px;
+border-radius: 5px;
+}

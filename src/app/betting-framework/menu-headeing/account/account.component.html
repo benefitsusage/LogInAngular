@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--<style>
+        body{
+            background-color: wheat;
+            height: 500px;
+            margin: 5px 5px 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .contanier-head{
+            background-color: greenyellow;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .user{
+            display: flex;
+            align-items: center;
+        }
+        .user > .user-icon{
+            margin: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>-->
+</head>
+
+<body>
+
+<div class="wrapper ">
+
+    <div class="title-text">
+            <div class="title login">Login Form</div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-inner">
+            <form  class="was-validated form">
+                <div class="form-group">
+                <div class="field">
+                    <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter username" name="email" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback hidden">Please fill out this field.</div>
+                </div>
+                </div>
+                <div class="form-group">
+                <div class="field">
+                    <input type="password" class="form-control" formControlName="password" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback hidden">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div>
+                    <button class="btn" (click)="onLogin()" type="submit">Login</button>
+                </div>
+                <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
